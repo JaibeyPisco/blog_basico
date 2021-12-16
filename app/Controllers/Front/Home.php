@@ -7,11 +7,8 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        return view('Front/Home.php');
     }
 
-    public function sayHola()
-    {
-        return "Hola";
-    }
+
 }

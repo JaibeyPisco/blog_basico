@@ -32,9 +32,8 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->group('/', ["namespace"=> 'App\Controllers\Front'], function($routes){
+$routes->group('/', ["namespace" => 'App\Controllers\Front'], function($routes){
     $routes->get('', 'Home::index');
-    $routes->get('/libreria', 'Home::sayHola');
 });
 
 
